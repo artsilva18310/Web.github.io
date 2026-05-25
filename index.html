@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Arthur da Silva | Desenvolvedor</title>
+
+  <!-- Ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1e3c72);
+      background-size: 400% 400%;
+      animation: gradient 12s ease infinite;
+    }
+
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .card {
+      backdrop-filter: blur(15px);
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 25px;
+      text-align: center;
+      width: 350px;
+      color: white;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+      animation: fadeUp 1s ease;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .card img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #00f2ff;
+      box-shadow: 0 0 20px #00f2ff;
+      transition: 0.4s;
+    }
+
+    .card img:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 35px #00f2ff;
+    }
+
+    h1 {
+      margin: 20px 0 10px;
+      font-size: 22px;
+    }
+
+    .typing {
+      font-size: 14px;
+      border-right: 2px solid white;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: typing 4s steps(30, end) forwards, blink 0.7s infinite;
+    }
+
+    @keyframes typing {
+      to { width: 100%; }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+
+    .buttons {
+      margin-top: 25px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin: 8px;
+      padding: 10px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      color: white;
+      border: 2px solid #00f2ff;
+      transition: 0.3s;
+    }
+
+    .buttons a:hover {
+      background: #00f2ff;
+      color: black;
+      box-shadow: 0 0 20px #00f2ff;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <img src="Minha foto.jpeg" alt="Arthur da Silva">
+
+    <h1>Arthur da Silva</h1>
+
+    <div class="typing">
+      O cara da TI | Consertador de Impressoras🚀
+    </div>
+
+    <div class="buttons">
+      <a href="https://github.com/artsilva18310" target="_blank">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+
+      <a href="https://www.linkedin.com/in/arthur-da-silva-a0a8b31b2" target="_blank">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+    </div>
+  </div>
+
+</body>
+
+</html>
